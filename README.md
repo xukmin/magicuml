@@ -12,6 +12,14 @@ The GUI main function resides in class `uml.UmlDiagramGeneratorGui`.
 
 ## Sample UML Diagrams Generated using MagicUML
 
+**Java Collections (TreeSet and HashSet)**
+
+![Java Collections](samples/JavaCollections.png "Java Collections")
+
+**Java Reflection Classes**
+
+![Java Reflection Classes](samples/JavaClasses-CompositePattern.png "Java Reflection Classes")
+
 **Observer Pattern**
 
 ![Observer Pattern](samples/patterns-ObserverPattern.png "Observer Pattern")
