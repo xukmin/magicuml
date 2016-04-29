@@ -1,0 +1,248 @@
+digraph unnamed {
+
+  graph [
+    rankdir = "BT";
+    splines = "ortho";
+
+  ];
+
+  "COMMENT.patterns.composite.Client" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Composite:\lClient\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "patterns.composite.Client" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+patterns.composite.Client<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ handleComponent(patterns.composite.Component):void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.patterns.composite.Composite" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Composite:\lComposite\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "patterns.composite.Composite" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+patterns.composite.Composite<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- componentVector:java.util.Vector<br/>- child1:patterns.composite.Component<br/>- child2:patterns.composite.Component<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ add(patterns.composite.Component):void<br/>+ remove(patterns.composite.Component):void<br/>+ sampleOperation():void<br/>+ components():java.util.Enumeration<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.patterns.composite.Leaf" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Composite:\lLeaf\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "patterns.composite.Leaf" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+patterns.composite.Leaf<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- componentVector:java.util.Vector<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ add(patterns.composite.Component):void<br/>+ remove(patterns.composite.Component):void<br/>+ sampleOperation():void<br/>+ components():java.util.Enumeration<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.patterns.composite.Component" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Composite:\lComponent\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "patterns.composite.Component" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+patterns.composite.Component<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ add(patterns.composite.Component):void<br/>+ remove(patterns.composite.Component):void<br/>+ sampleOperation():void<br/>+ components():java.util.Enumeration<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.patterns.composite.Client" -> "patterns.composite.Client" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "patterns.composite.Client" -> "patterns.composite.Composite" [
+    arrowhead = "none";
+    arrowtail = "none";
+    constraint = "false";
+    style = "invisible";
+
+  ];
+
+  "patterns.composite.Client" -> "patterns.composite.Leaf" [
+    arrowhead = "none";
+    arrowtail = "none";
+    constraint = "false";
+    style = "invisible";
+
+  ];
+
+  "patterns.composite.Client" -> "patterns.composite.Component" [
+    arrowhead = "vee";
+    arrowtail = "empty";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "COMMENT.patterns.composite.Composite" -> "patterns.composite.Composite" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "patterns.composite.Composite" -> "patterns.composite.Component" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "patterns.composite.Composite" -> "patterns.composite.Component" [
+    arrowhead = "vee";
+    arrowtail = "odiamond";
+    constraint = "false";
+    dir = "both";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "COMMENT.patterns.composite.Leaf" -> "patterns.composite.Leaf" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "patterns.composite.Leaf" -> "patterns.composite.Component" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "COMMENT.patterns.composite.Component" -> "patterns.composite.Component" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  {
+    rank = "same";
+
+    "COMMENT.patterns.composite.Client";
+    "patterns.composite.Client";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.patterns.composite.Composite";
+    "patterns.composite.Composite";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.patterns.composite.Leaf";
+    "patterns.composite.Leaf";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.patterns.composite.Component";
+    "patterns.composite.Component";
+  };
+}

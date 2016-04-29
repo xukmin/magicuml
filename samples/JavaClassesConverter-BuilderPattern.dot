@@ -1,0 +1,376 @@
+digraph unnamed {
+
+  graph [
+    rankdir = "BT";
+
+  ];
+
+  "COMMENT.uml.JavaClassesConverter" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Builder.Director\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.JavaClassesConverter" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.JavaClassesConverter<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- matcher:uml.UmlMatcher<br/>- builder:uml.UmlClassDiagramBuilder<br/>- queue:java.util.Queue<br/>- visited:java.util.Set<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- matches(java.lang.Class):boolean<br/>+ convertClasses(java.util.Collection):void<br/>- convertClass(java.lang.Class):void<br/>+ convertClassNames(java.util.Collection):void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "uml.UmlEntity" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+uml.UmlEntity<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ getModifiers():int<br/>+ getName():java.lang.String<br/>+ getDeclaringClass():java.lang.String<br/>+ accept(uml.GenericUmlVisitor):java.lang.Object<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "uml.UmlClass" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+uml.UmlClass<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ isPrimitive():boolean<br/>+ getSuperclass():java.lang.String<br/>+ getName():java.lang.String<br/>+ getFields():java.util.List<br/>+ getMethods():java.util.List<br/>+ getAnnotations():java.util.List<br/>+ getSuperinterfaces():java.util.List<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "uml.UmlInterface" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+uml.UmlInterface<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ accept(uml.GenericUmlVisitor):java.lang.Object<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "uml.UmlAbstractClass" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+uml.UmlAbstractClass<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ accept(uml.GenericUmlVisitor):java.lang.Object<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "uml.UmlConcreteClass" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+uml.UmlConcreteClass<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ accept(uml.GenericUmlVisitor):java.lang.Object<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "uml.UmlField" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+uml.UmlField<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ accept(uml.GenericUmlVisitor):java.lang.Object<br/>+ getType():java.lang.String<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "uml.UmlMethod" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+uml.UmlMethod<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ getName():java.lang.String<br/>+ getReturnType():java.lang.String<br/>+ getParameterTypes():java.util.List<br/>+ accept(uml.GenericUmlVisitor):java.lang.Object<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.UmlClassDiagramBuilder" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Builder:\lBuilder\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.UmlClassDiagramBuilder" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+uml.UmlClassDiagramBuilder<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ addAbstractClass(java.lang.String):uml.UmlClassDiagramBuilder<br/>+ addInterface(java.lang.String):uml.UmlClassDiagramBuilder<br/>+ addConcreteClass(java.lang.String):uml.UmlClassDiagramBuilder<br/>+ setSuperclass(java.lang.String):uml.UmlClassDiagramBuilder<br/>+ addSuperinterface(java.lang.String):uml.UmlClassDiagramBuilder<br/>+ addMethod(java.lang.String):uml.UmlClassDiagramBuilder<br/>+ setReturnType(java.lang.String):uml.UmlClassDiagramBuilder<br/>+ addParameter(java.lang.String):uml.UmlClassDiagramBuilder<br/>+ addField(java.lang.String, java.lang.String):uml.UmlClassDiagramBuilder<br/>+ setModifiers(int):uml.UmlClassDiagramBuilder<br/>+ addAnnotation(java.lang.annotation.Annotation):uml.UmlClassDiagramBuilder<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.CanonicalUmlClassDiagramBuilder" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Builder:\lConcreteBuilder\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.CanonicalUmlClassDiagramBuilder" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.CanonicalUmlClassDiagramBuilder<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- classes:java.util.List<br/>- currentEntity:uml.MutableUmlEntity<br/>- currentClass:uml.MutableUmlClass<br/>- currentMethod:uml.MutableUmlMethod<br/>- currentField:uml.MutableUmlField<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ getClasses():java.util.List<br/>+ addAbstractClass(java.lang.String):uml.CanonicalUmlClassDiagramBuilder<br/>+ addInterface(java.lang.String):uml.CanonicalUmlClassDiagramBuilder<br/>+ addConcreteClass(java.lang.String):uml.CanonicalUmlClassDiagramBuilder<br/>+ setSuperclass(java.lang.String):uml.CanonicalUmlClassDiagramBuilder<br/>+ addSuperinterface(java.lang.String):uml.CanonicalUmlClassDiagramBuilder<br/>+ addMethod(java.lang.String):uml.CanonicalUmlClassDiagramBuilder<br/>+ setReturnType(java.lang.String):uml.CanonicalUmlClassDiagramBuilder<br/>+ addParameter(java.lang.String):uml.CanonicalUmlClassDiagramBuilder<br/>+ addField(java.lang.String, java.lang.String):uml.CanonicalUmlClassDiagramBuilder<br/>+ setModifiers(int):uml.UmlClassDiagramBuilder<br/>+ addAnnotation(java.lang.annotation.Annotation):uml.UmlClassDiagramBuilder<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.JavaClassesConverter" -> "uml.JavaClassesConverter" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.JavaClassesConverter" -> "uml.UmlClassDiagramBuilder" [
+    arrowhead = "vee";
+    arrowtail = "odiamond";
+    constraint = "false";
+    dir = "both";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "uml.UmlClass" -> "uml.UmlEntity" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlInterface" -> "uml.UmlClass" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlAbstractClass" -> "uml.UmlClass" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlConcreteClass" -> "uml.UmlClass" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlField" -> "uml.UmlEntity" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlMethod" -> "uml.UmlEntity" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "COMMENT.uml.UmlClassDiagramBuilder" -> "uml.UmlClassDiagramBuilder" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "COMMENT.uml.CanonicalUmlClassDiagramBuilder" -> "uml.CanonicalUmlClassDiagramBuilder" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.CanonicalUmlClassDiagramBuilder" -> "uml.UmlClassDiagramBuilder" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  {
+    rank = "same";
+
+    "COMMENT.uml.JavaClassesConverter";
+    "uml.JavaClassesConverter";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.UmlClassDiagramBuilder";
+    "uml.UmlClassDiagramBuilder";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.CanonicalUmlClassDiagramBuilder";
+    "uml.CanonicalUmlClassDiagramBuilder";
+  };
+}

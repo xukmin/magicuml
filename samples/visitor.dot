@@ -1,0 +1,334 @@
+digraph unnamed {
+
+  graph [
+    rankdir = "BT";
+
+  ];
+
+  "COMMENT.uml.GenericUmlVisitor" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Visitor.Visitor\lAdapter.Target\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.GenericUmlVisitor" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+uml.GenericUmlVisitor<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ visit(uml.UmlConcreteClass):java.lang.Object<br/>+ visit(uml.UmlField):java.lang.Object<br/>+ visit(uml.UmlMethod):java.lang.Object<br/>+ visit(uml.UmlPrimitiveType):java.lang.Object<br/>+ visit(uml.UmlEntity):java.lang.Object<br/>+ visit(uml.UmlClass):java.lang.Object<br/>+ visit(uml.UmlInterface):java.lang.Object<br/>+ visit(uml.UmlAbstractClass):java.lang.Object<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.UmlVisitor" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Adapter.Adaptee\lAdapter.Target\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.UmlVisitor" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+uml.UmlVisitor<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ visit(uml.UmlAbstractClass):void<br/>+ visit(uml.UmlConcreteClass):void<br/>+ visit(uml.UmlField):void<br/>+ visit(uml.UmlMethod):void<br/>+ visit(uml.UmlInterface):void<br/>+ visit(uml.UmlClass):void<br/>+ visit(uml.UmlEntity):void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.UmlVisitorAdapter" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Adapter.Adapter\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.UmlVisitorAdapter" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.UmlVisitorAdapter<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- visitor:uml.UmlVisitor<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ visit(uml.UmlAbstractClass):java.lang.Void<br/>+ visit(uml.UmlInterface):java.lang.Void<br/>+ visit(uml.UmlClass):java.lang.Void<br/>+ visit(uml.UmlEntity):java.lang.Void<br/>+ visit(uml.UmlPrimitiveType):java.lang.Void<br/>+ visit(uml.UmlMethod):java.lang.Void<br/>+ visit(uml.UmlField):java.lang.Void<br/>+ visit(uml.UmlConcreteClass):java.lang.Void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.UmlClassDiagramConverter" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Adapter.Adaptee\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.UmlClassDiagramConverter" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+uml.UmlClassDiagramConverter<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ convertAll(java.util.List):void<br/>+ convert(uml.UmlAbstractClass):void<br/>+ convert(uml.UmlConcreteClass):void<br/>+ convert(uml.UmlField):void<br/>+ convert(uml.UmlMethod):void<br/>+ convert(uml.UmlInterface):void<br/>+ convert(uml.UmlClass):void<br/>+ convert(uml.UmlEntity):void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.DotUmlClassDiagramConverter" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Adapter.ConcreteAdaptee\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.DotUmlClassDiagramConverter" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.DotUmlClassDiagramConverter<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- matcher:uml.UmlMatcher<br/>- style:uml.DotUmlClassDiagramStyle<br/>- classes:java.util.Map<br/>- graph:uml.DotGraph<br/>- showFields:boolean<br/>- showMethods:boolean<br/>- currentTable:uml.HtmlTable<br/>- currentCell:uml.HtmlTableCell<br/>- superTypes:java.util.Set<br/>- relatedTypes:java.util.Set<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ convertAll(java.util.List):void<br/>+ getGraph():uml.DotGraph<br/>+ showFields():boolean<br/>+ showMethods():boolean<br/>- convertFields(uml.UmlClass):void<br/>- convertMethods(uml.UmlClass):void<br/>- convertClassName(java.lang.String, java.lang.String):void<br/>- convertParents(uml.UmlClass):void<br/>- getModifierSymbol(int):java.lang.String<br/>- joinWithComma(java.util.List):java.lang.String<br/>+ setShowFields(boolean):void<br/>+ setShowMethods(boolean):void<br/>+ convert(uml.UmlInterface):void<br/>+ convert(uml.UmlClass):void<br/>+ convert(uml.UmlAbstractClass):void<br/>+ convert(uml.UmlEntity):void<br/>+ convert(uml.UmlConcreteClass):void<br/>+ convert(uml.UmlField):void<br/>+ convert(uml.UmlMethod):void<br/>+ convert(uml.UmlAnnotation):void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.UmlClassDiagramConverterAdapter" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Adapter.ConcreteAdaptee\lAdapter.Adapter\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.UmlClassDiagramConverterAdapter" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.UmlClassDiagramConverterAdapter<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- converter:uml.UmlClassDiagramConverter<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ visit(uml.UmlAbstractClass):void<br/>+ visit(uml.UmlConcreteClass):void<br/>+ visit(uml.UmlField):void<br/>+ visit(uml.UmlMethod):void<br/>+ visit(uml.UmlInterface):void<br/>+ visit(uml.UmlClass):void<br/>+ visit(uml.UmlEntity):void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.GenericUmlVisitor" -> "uml.GenericUmlVisitor" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "COMMENT.uml.UmlVisitor" -> "uml.UmlVisitor" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "COMMENT.uml.UmlVisitorAdapter" -> "uml.UmlVisitorAdapter" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlVisitorAdapter" -> "uml.GenericUmlVisitor" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlVisitorAdapter" -> "uml.UmlVisitor" [
+    arrowhead = "vee";
+    arrowtail = "odiamond";
+    constraint = "false";
+    dir = "both";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "COMMENT.uml.UmlClassDiagramConverter" -> "uml.UmlClassDiagramConverter" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "COMMENT.uml.DotUmlClassDiagramConverter" -> "uml.DotUmlClassDiagramConverter" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.DotUmlClassDiagramConverter" -> "uml.UmlClassDiagramConverter" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "COMMENT.uml.UmlClassDiagramConverterAdapter" -> "uml.UmlClassDiagramConverterAdapter" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlClassDiagramConverterAdapter" -> "uml.UmlVisitor" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlClassDiagramConverterAdapter" -> "uml.UmlClassDiagramConverter" [
+    arrowhead = "vee";
+    arrowtail = "odiamond";
+    constraint = "false";
+    dir = "both";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  {
+    rank = "same";
+
+    "COMMENT.uml.GenericUmlVisitor";
+    "uml.GenericUmlVisitor";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.UmlVisitor";
+    "uml.UmlVisitor";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.UmlVisitorAdapter";
+    "uml.UmlVisitorAdapter";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.UmlClassDiagramConverter";
+    "uml.UmlClassDiagramConverter";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.DotUmlClassDiagramConverter";
+    "uml.DotUmlClassDiagramConverter";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.UmlClassDiagramConverterAdapter";
+    "uml.UmlClassDiagramConverterAdapter";
+  };
+}

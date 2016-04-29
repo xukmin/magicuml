@@ -1,0 +1,188 @@
+digraph unnamed {
+
+  graph [
+    rankdir = "BT";
+    splines = "ortho";
+
+  ];
+
+  "patterns.observer.ConcreteObserver" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+patterns.observer.ConcreteObserver<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- observerState:patterns.observer.SubjectState<br/>- subject:patterns.observer.ConcreteSubject<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ update():void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "patterns.observer.Observer" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+patterns.observer.Observer<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ update():void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "patterns.observer.SubjectState" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+patterns.observer.SubjectState<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "patterns.observer.ConcreteSubject" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+patterns.observer.ConcreteSubject<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- subjectState:patterns.observer.SubjectState<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ getState():patterns.observer.SubjectState<br/>+ attach(patterns.observer.Observer):void<br/>+ notifyObservers():void<br/>+ detach(patterns.observer.Observer):void<br/>+ setState(patterns.observer.SubjectState):void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "patterns.observer.Subject" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+patterns.observer.Subject<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ attach(patterns.observer.Observer):void<br/>+ notifyObservers():void<br/>+ detach(patterns.observer.Observer):void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "patterns.observer.ConcreteObserver" -> "patterns.observer.Observer" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "patterns.observer.ConcreteObserver" -> "patterns.observer.SubjectState" [
+    arrowhead = "vee";
+    arrowtail = "odiamond";
+    constraint = "false";
+    dir = "both";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "patterns.observer.ConcreteObserver" -> "patterns.observer.ConcreteSubject" [
+    arrowhead = "vee";
+    arrowtail = "odiamond";
+    constraint = "false";
+    dir = "both";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "patterns.observer.ConcreteSubject" -> "patterns.observer.Subject" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "patterns.observer.ConcreteSubject" -> "patterns.observer.SubjectState" [
+    arrowhead = "vee";
+    arrowtail = "odiamond";
+    constraint = "false";
+    dir = "both";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "patterns.observer.ConcreteSubject" -> "patterns.observer.Observer" [
+    arrowhead = "vee";
+    arrowtail = "empty";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "patterns.observer.Subject" -> "patterns.observer.Observer" [
+    arrowhead = "vee";
+    arrowtail = "empty";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+}

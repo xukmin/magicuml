@@ -1,0 +1,352 @@
+digraph unnamed {
+
+  graph [
+    rankdir = "BT";
+    splines = "ortho";
+
+  ];
+
+  "COMMENT.patterns.builder.Director" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Builder:\lDirector\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "patterns.builder.Director" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+patterns.builder.Director<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ construct(patterns.builder.Builder):void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.patterns.builder.ConcreteBuilderA" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Builder:\lConcreteBuilder\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "patterns.builder.ConcreteBuilderA" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+patterns.builder.ConcreteBuilderA<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+~ getResult():patterns.builder.ProductA<br/>+ buildPartA():void<br/>+ buildPartB():void<br/>+ buildPartC():void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.patterns.builder.ConcreteBuilderB" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Builder:\lConcreteBuilder\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "patterns.builder.ConcreteBuilderB" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+patterns.builder.ConcreteBuilderB<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ getResult():patterns.builder.ProductB<br/>+ buildPartA():void<br/>+ buildPartB():void<br/>+ buildPartC():void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.patterns.builder.Builder" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Builder:\lBuilder\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "patterns.builder.Builder" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+patterns.builder.Builder<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ buildPartA():void<br/>+ buildPartB():void<br/>+ buildPartC():void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.patterns.builder.ProductA" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Builder:\lProduct\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "patterns.builder.ProductA" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+patterns.builder.ProductA<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.patterns.builder.ProductB" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Builder:\lProduct\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "patterns.builder.ProductB" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+patterns.builder.ProductB<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.patterns.builder.Director" -> "patterns.builder.Director" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "patterns.builder.Director" -> "patterns.builder.ConcreteBuilderA" [
+    arrowhead = "none";
+    arrowtail = "none";
+    constraint = "false";
+    style = "invisible";
+
+  ];
+
+  "patterns.builder.Director" -> "patterns.builder.ConcreteBuilderB" [
+    arrowhead = "none";
+    arrowtail = "none";
+    constraint = "false";
+    style = "invisible";
+
+  ];
+
+  "patterns.builder.Director" -> "patterns.builder.Builder" [
+    arrowhead = "vee";
+    arrowtail = "empty";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "COMMENT.patterns.builder.ConcreteBuilderA" -> "patterns.builder.ConcreteBuilderA" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "patterns.builder.ConcreteBuilderA" -> "patterns.builder.Builder" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "patterns.builder.ConcreteBuilderA" -> "patterns.builder.ProductA" [
+    arrowhead = "vee";
+    arrowtail = "empty";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "COMMENT.patterns.builder.ConcreteBuilderB" -> "patterns.builder.ConcreteBuilderB" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "patterns.builder.ConcreteBuilderB" -> "patterns.builder.Builder" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "patterns.builder.ConcreteBuilderB" -> "patterns.builder.ProductB" [
+    arrowhead = "vee";
+    arrowtail = "empty";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "COMMENT.patterns.builder.Builder" -> "patterns.builder.Builder" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "COMMENT.patterns.builder.ProductA" -> "patterns.builder.ProductA" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "COMMENT.patterns.builder.ProductB" -> "patterns.builder.ProductB" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  {
+    rank = "same";
+
+    "COMMENT.patterns.builder.Director";
+    "patterns.builder.Director";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.patterns.builder.ConcreteBuilderA";
+    "patterns.builder.ConcreteBuilderA";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.patterns.builder.ConcreteBuilderB";
+    "patterns.builder.ConcreteBuilderB";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.patterns.builder.Builder";
+    "patterns.builder.Builder";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.patterns.builder.ProductA";
+    "patterns.builder.ProductA";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.patterns.builder.ProductB";
+    "patterns.builder.ProductB";
+  };
+}

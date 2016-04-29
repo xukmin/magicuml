@@ -1,0 +1,365 @@
+digraph unnamed {
+
+  graph [
+    rankdir = "BT";
+
+  ];
+
+  "COMMENT.patterns.decorator.Client" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Decorator:\lClient\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "patterns.decorator.Client" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+patterns.decorator.Client<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ handle(patterns.decorator.Component):void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.patterns.decorator.ConcreteComponent" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Decorator:\lConcreteComponent\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "patterns.decorator.ConcreteComponent" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+patterns.decorator.ConcreteComponent<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ operation():void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.patterns.decorator.ConcreteDecoratorA" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Decorator:\lConcreteDecorator\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "patterns.decorator.ConcreteDecoratorA" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+patterns.decorator.ConcreteDecoratorA<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- addedState:int<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ operation():void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.patterns.decorator.ConcreteDecoratorB" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Decorator:\lConcreteDecorator\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "patterns.decorator.ConcreteDecoratorB" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+patterns.decorator.ConcreteDecoratorB<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ operation():void<br/>+ addedBehavior():void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.patterns.decorator.Component" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Decorator:\lComponent\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "patterns.decorator.Component" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+patterns.decorator.Component<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ operation():void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.patterns.decorator.Decorator" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Decorator:\lComponent\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "patterns.decorator.Decorator" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+patterns.decorator.Decorator<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ compt:patterns.decorator.Component<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ operation():void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.patterns.decorator.Client" -> "patterns.decorator.Client" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "patterns.decorator.Client" -> "patterns.decorator.ConcreteComponent" [
+    arrowhead = "none";
+    arrowtail = "none";
+    constraint = "false";
+    style = "invisible";
+
+  ];
+
+  "patterns.decorator.Client" -> "patterns.decorator.ConcreteDecoratorA" [
+    arrowhead = "none";
+    arrowtail = "none";
+    constraint = "false";
+    style = "invisible";
+
+  ];
+
+  "patterns.decorator.Client" -> "patterns.decorator.ConcreteDecoratorB" [
+    arrowhead = "none";
+    arrowtail = "none";
+    constraint = "false";
+    style = "invisible";
+
+  ];
+
+  "patterns.decorator.Client" -> "patterns.decorator.Component" [
+    arrowhead = "vee";
+    arrowtail = "empty";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "COMMENT.patterns.decorator.ConcreteComponent" -> "patterns.decorator.ConcreteComponent" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "patterns.decorator.ConcreteComponent" -> "patterns.decorator.Component" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "COMMENT.patterns.decorator.ConcreteDecoratorA" -> "patterns.decorator.ConcreteDecoratorA" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "patterns.decorator.ConcreteDecoratorA" -> "patterns.decorator.Decorator" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "COMMENT.patterns.decorator.ConcreteDecoratorB" -> "patterns.decorator.ConcreteDecoratorB" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "patterns.decorator.ConcreteDecoratorB" -> "patterns.decorator.Decorator" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "COMMENT.patterns.decorator.Component" -> "patterns.decorator.Component" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "COMMENT.patterns.decorator.Decorator" -> "patterns.decorator.Decorator" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "patterns.decorator.Decorator" -> "patterns.decorator.Component" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "patterns.decorator.Decorator" -> "patterns.decorator.Component" [
+    arrowhead = "vee";
+    arrowtail = "odiamond";
+    constraint = "false";
+    dir = "both";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  {
+    rank = "same";
+
+    "COMMENT.patterns.decorator.Client";
+    "patterns.decorator.Client";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.patterns.decorator.ConcreteComponent";
+    "patterns.decorator.ConcreteComponent";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.patterns.decorator.ConcreteDecoratorA";
+    "patterns.decorator.ConcreteDecoratorA";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.patterns.decorator.ConcreteDecoratorB";
+    "patterns.decorator.ConcreteDecoratorB";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.patterns.decorator.Component";
+    "patterns.decorator.Component";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.patterns.decorator.Decorator";
+    "patterns.decorator.Decorator";
+  };
+}

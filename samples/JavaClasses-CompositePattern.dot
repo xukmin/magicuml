@@ -1,0 +1,240 @@
+digraph unnamed {
+
+  graph [
+    rankdir = "BT";
+
+  ];
+
+  "java.lang.Class" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#1DE9B6'>
+&lt;&lt;Java class&gt;&gt;<br/>
+java.lang.Class<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ forName(java.lang.String):java.lang.Class<br/>+ forName(java.lang.String, boolean, java.lang.ClassLoader):java.lang.Class<br/>+ toString():java.lang.String<br/>+ getProtectionDomain():java.security.ProtectionDomain<br/>+ isAssignableFrom(java.lang.Class):boolean<br/>+ isInstance(java.lang.Object):boolean<br/>+ getModifiers():int<br/>+ isInterface():boolean<br/>+ isArray():boolean<br/>+ isPrimitive():boolean<br/>+ getSuperclass():java.lang.Class<br/>+ getComponentType():java.lang.Class<br/>+ getName():java.lang.String<br/>+ toGenericString():java.lang.String<br/>+ newInstance():java.lang.Object<br/>+ isAnnotation():boolean<br/>+ isSynthetic():boolean<br/>+ getClassLoader():java.lang.ClassLoader<br/>+ getTypeParameters():java.lang.reflect.TypeVariable[]<br/>+ getGenericSuperclass():java.lang.reflect.Type<br/>+ getPackage():java.lang.Package<br/>+ getInterfaces():java.lang.Class[]<br/>+ getGenericInterfaces():java.lang.reflect.Type[]<br/>+ getSigners():java.lang.Object[]<br/>+ getEnclosingMethod():java.lang.reflect.Method<br/>+ getEnclosingConstructor():java.lang.reflect.Constructor<br/>+ getDeclaringClass():java.lang.Class<br/>+ getEnclosingClass():java.lang.Class<br/>+ getSimpleName():java.lang.String<br/>+ getTypeName():java.lang.String<br/>+ getCanonicalName():java.lang.String<br/>+ isAnonymousClass():boolean<br/>+ isLocalClass():boolean<br/>+ isMemberClass():boolean<br/>+ getClasses():java.lang.Class[]<br/>+ getFields():java.lang.reflect.Field[]<br/>+ getMethods():java.lang.reflect.Method[]<br/>+ getConstructors():java.lang.reflect.Constructor[]<br/>+ getField(java.lang.String):java.lang.reflect.Field<br/>+ getMethod(java.lang.String, java.lang.Class[]):java.lang.reflect.Method<br/>+ getConstructor(java.lang.Class[]):java.lang.reflect.Constructor<br/>+ getDeclaredClasses():java.lang.Class[]<br/>+ getDeclaredFields():java.lang.reflect.Field[]<br/>+ getDeclaredMethods():java.lang.reflect.Method[]<br/>+ getDeclaredConstructors():java.lang.reflect.Constructor[]<br/>+ getDeclaredField(java.lang.String):java.lang.reflect.Field<br/>+ getDeclaredMethod(java.lang.String, java.lang.Class[]):java.lang.reflect.Method<br/>+ getDeclaredConstructor(java.lang.Class[]):java.lang.reflect.Constructor<br/>+ getResourceAsStream(java.lang.String):java.io.InputStream<br/>+ getResource(java.lang.String):java.net.URL<br/>+ desiredAssertionStatus():boolean<br/>+ isEnum():boolean<br/>+ getEnumConstants():java.lang.Object[]<br/>+ cast(java.lang.Object):java.lang.Object<br/>+ asSubclass(java.lang.Class):java.lang.Class<br/>+ getAnnotation(java.lang.Class):java.lang.annotation.Annotation<br/>+ isAnnotationPresent(java.lang.Class):boolean<br/>+ getAnnotationsByType(java.lang.Class):java.lang.annotation.Annotation[]<br/>+ getAnnotations():java.lang.annotation.Annotation[]<br/>+ getDeclaredAnnotation(java.lang.Class):java.lang.annotation.Annotation<br/>+ getDeclaredAnnotationsByType(java.lang.Class):java.lang.annotation.Annotation[]<br/>+ getDeclaredAnnotations():java.lang.annotation.Annotation[]<br/>+ getAnnotatedSuperclass():java.lang.reflect.AnnotatedType<br/>+ getAnnotatedInterfaces():java.lang.reflect.AnnotatedType[]<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "java.lang.reflect.Field" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#1DE9B6'>
+&lt;&lt;Java class&gt;&gt;<br/>
+java.lang.reflect.Field<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ get(java.lang.Object):java.lang.Object<br/>+ equals(java.lang.Object):boolean<br/>+ toString():java.lang.String<br/>+ hashCode():int<br/>+ getModifiers():int<br/>+ getBoolean(java.lang.Object):boolean<br/>+ getByte(java.lang.Object):byte<br/>+ getShort(java.lang.Object):short<br/>+ getChar(java.lang.Object):char<br/>+ getInt(java.lang.Object):int<br/>+ getLong(java.lang.Object):long<br/>+ getFloat(java.lang.Object):float<br/>+ getDouble(java.lang.Object):double<br/>+ getName():java.lang.String<br/>+ toGenericString():java.lang.String<br/>+ isSynthetic():boolean<br/>+ getDeclaringClass():java.lang.Class<br/>+ getAnnotation(java.lang.Class):java.lang.annotation.Annotation<br/>+ getAnnotationsByType(java.lang.Class):java.lang.annotation.Annotation[]<br/>+ getDeclaredAnnotations():java.lang.annotation.Annotation[]<br/>+ isEnumConstant():boolean<br/>+ getType():java.lang.Class<br/>+ getGenericType():java.lang.reflect.Type<br/>+ set(java.lang.Object, java.lang.Object):void<br/>+ setBoolean(java.lang.Object, boolean):void<br/>+ setByte(java.lang.Object, byte):void<br/>+ setChar(java.lang.Object, char):void<br/>+ setShort(java.lang.Object, short):void<br/>+ setInt(java.lang.Object, int):void<br/>+ setLong(java.lang.Object, long):void<br/>+ setFloat(java.lang.Object, float):void<br/>+ setDouble(java.lang.Object, double):void<br/>+ getAnnotatedType():java.lang.reflect.AnnotatedType<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "java.lang.reflect.Constructor" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#1DE9B6'>
+&lt;&lt;Java class&gt;&gt;<br/>
+java.lang.reflect.Constructor<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ equals(java.lang.Object):boolean<br/>+ toString():java.lang.String<br/>+ hashCode():int<br/>+ getModifiers():int<br/>+ getName():java.lang.String<br/>+ toGenericString():java.lang.String<br/>+ newInstance(java.lang.Object[]):java.lang.Object<br/>+ isSynthetic():boolean<br/>+ getTypeParameters():java.lang.reflect.TypeVariable[]<br/>+ getDeclaringClass():java.lang.Class<br/>+ getAnnotation(java.lang.Class):java.lang.annotation.Annotation<br/>+ getDeclaredAnnotations():java.lang.annotation.Annotation[]<br/>+ getParameterTypes():java.lang.Class[]<br/>+ isVarArgs():boolean<br/>+ getParameterCount():int<br/>+ getParameterAnnotations():java.lang.annotation.Annotation[][]<br/>+ getGenericParameterTypes():java.lang.reflect.Type[]<br/>+ getExceptionTypes():java.lang.Class[]<br/>+ getGenericExceptionTypes():java.lang.reflect.Type[]<br/>+ getAnnotatedReturnType():java.lang.reflect.AnnotatedType<br/>+ getAnnotatedReceiverType():java.lang.reflect.AnnotatedType<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "java.lang.reflect.Method" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#1DE9B6'>
+&lt;&lt;Java class&gt;&gt;<br/>
+java.lang.reflect.Method<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ invoke(java.lang.Object, java.lang.Object[]):java.lang.Object<br/>+ equals(java.lang.Object):boolean<br/>+ toString():java.lang.String<br/>+ hashCode():int<br/>+ getModifiers():int<br/>+ getName():java.lang.String<br/>+ toGenericString():java.lang.String<br/>+ isSynthetic():boolean<br/>+ getTypeParameters():java.lang.reflect.TypeVariable[]<br/>+ getDeclaringClass():java.lang.Class<br/>+ getAnnotation(java.lang.Class):java.lang.annotation.Annotation<br/>+ getDeclaredAnnotations():java.lang.annotation.Annotation[]<br/>+ getReturnType():java.lang.Class<br/>+ getParameterTypes():java.lang.Class[]<br/>+ isDefault():boolean<br/>+ isVarArgs():boolean<br/>+ getParameterCount():int<br/>+ getParameterAnnotations():java.lang.annotation.Annotation[][]<br/>+ getGenericReturnType():java.lang.reflect.Type<br/>+ getGenericParameterTypes():java.lang.reflect.Type[]<br/>+ getExceptionTypes():java.lang.Class[]<br/>+ getGenericExceptionTypes():java.lang.reflect.Type[]<br/>+ isBridge():boolean<br/>+ getDefaultValue():java.lang.Object<br/>+ getAnnotatedReturnType():java.lang.reflect.AnnotatedType<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "java.lang.reflect.Member" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#00B0FF'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+java.lang.reflect.Member<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ PUBLIC:int<br/>+ DECLARED:int<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ getModifiers():int<br/>+ getName():java.lang.String<br/>+ isSynthetic():boolean<br/>+ getDeclaringClass():java.lang.Class<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "java.lang.reflect.AccessibleObject" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#1DE9B6'>
+&lt;&lt;Java class&gt;&gt;<br/>
+java.lang.reflect.AccessibleObject<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ getAnnotation(java.lang.Class):java.lang.annotation.Annotation<br/>+ isAnnotationPresent(java.lang.Class):boolean<br/>+ getAnnotationsByType(java.lang.Class):java.lang.annotation.Annotation[]<br/>+ getAnnotations():java.lang.annotation.Annotation[]<br/>+ getDeclaredAnnotation(java.lang.Class):java.lang.annotation.Annotation<br/>+ getDeclaredAnnotationsByType(java.lang.Class):java.lang.annotation.Annotation[]<br/>+ getDeclaredAnnotations():java.lang.annotation.Annotation[]<br/>+ setAccessible(java.lang.reflect.AccessibleObject[], boolean):void<br/>+ setAccessible(boolean):void<br/>+ isAccessible():boolean<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "java.lang.Class" -> "java.lang.reflect.Method" [
+    arrowhead = "vee";
+    arrowtail = "empty";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "java.lang.Class" -> "java.lang.reflect.Constructor" [
+    arrowhead = "vee";
+    arrowtail = "empty";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "java.lang.Class" -> "java.lang.reflect.Field" [
+    arrowhead = "vee";
+    arrowtail = "empty";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "java.lang.reflect.Field" -> "java.lang.reflect.AccessibleObject" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "java.lang.reflect.Field" -> "java.lang.reflect.Member" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "java.lang.reflect.Field" -> "java.lang.Class" [
+    arrowhead = "vee";
+    arrowtail = "empty";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "java.lang.reflect.Constructor" -> "java.lang.Class" [
+    arrowhead = "vee";
+    arrowtail = "empty";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "java.lang.reflect.Method" -> "java.lang.Class" [
+    arrowhead = "vee";
+    arrowtail = "empty";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "java.lang.reflect.Member" -> "java.lang.Class" [
+    arrowhead = "vee";
+    arrowtail = "empty";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "java.lang.reflect.AccessibleObject" -> "java.lang.Class" [
+    arrowhead = "vee";
+    arrowtail = "empty";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+}

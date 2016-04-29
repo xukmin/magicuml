@@ -1,0 +1,791 @@
+digraph unnamed {
+
+  graph [
+    rankdir = "BT";
+
+  ];
+
+  "COMMENT.uml.UmlMatcher" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Interpreter:\lAbstractExpression\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.UmlMatcher" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+uml.UmlMatcher<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ matches(uml.UmlAnnotation):boolean<br/>+ matches(uml.UmlMethod):boolean<br/>+ matches(uml.UmlField):boolean<br/>+ matches(uml.UmlClass):boolean<br/>+ matches(uml.UmlEntity):boolean<br/>+ matchesMethodParameterTypes():boolean<br/>+ matchesFieldType():boolean<br/>+ matchesMethodReturnType():boolean<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.AllUmlMatcher" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Interpreter:\lTerminalExpression\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.AllUmlMatcher" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.AllUmlMatcher<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ matches(uml.UmlField):boolean<br/>+ matches(uml.UmlMethod):boolean<br/>+ matches(uml.UmlAnnotation):boolean<br/>+ matches(uml.UmlClass):boolean<br/>+ matches(uml.UmlEntity):boolean<br/>+ matchesMethodParameterTypes():boolean<br/>+ matchesFieldType():boolean<br/>+ matchesMethodReturnType():boolean<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.UmlAnnotationFilter" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Interpreter:\lTerminalExpression\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.UmlAnnotationFilter" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.UmlAnnotationFilter<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ matches(uml.UmlAnnotation):boolean<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.UmlFieldFilter" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Interpreter:\lTerminalExpression\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.UmlFieldFilter" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.UmlFieldFilter<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ matches(uml.UmlField):boolean<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.UmlFieldTypeFilter" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Interpreter:\lTerminalExpression\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.UmlFieldTypeFilter" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.UmlFieldTypeFilter<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ matchesFieldType():boolean<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.UmlMethodFilter" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Interpreter:\lTerminalExpression\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.UmlMethodFilter" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.UmlMethodFilter<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ matches(uml.UmlMethod):boolean<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.UmlMethodParameterTypesFilter" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Interpreter:\lTerminalExpression\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.UmlMethodParameterTypesFilter" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.UmlMethodParameterTypesFilter<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ matchesMethodParameterTypes():boolean<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.UmlMethodReturnTypeFilter" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Interpreter:\lTerminalExpression\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.UmlMethodReturnTypeFilter" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.UmlMethodReturnTypeFilter<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ matchesMethodReturnType():boolean<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.UmlPackageMatcher" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Interpreter:\lTerminalExpression\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.UmlPackageMatcher" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.UmlPackageMatcher<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- packagePrefixes:java.util.List<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ matches(uml.UmlClass):boolean<br/>+ createFromClasses(java.util.Collection):uml.UmlPackageMatcher<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.UmlPublicMatcher" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Interpreter:\lTerminalExpression\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.UmlPublicMatcher" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.UmlPublicMatcher<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ matches(uml.UmlMethod):boolean<br/>+ matches(uml.UmlField):boolean<br/>+ matches(uml.UmlClass):boolean<br/>+ matches(uml.UmlEntity):boolean<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.AndUmlMatcher" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Interpreter:\lNonterminalExpression\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.AndUmlMatcher" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.AndUmlMatcher<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- lhs:uml.UmlMatcher<br/>- rhs:uml.UmlMatcher<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ matches(uml.UmlField):boolean<br/>+ matches(uml.UmlMethod):boolean<br/>+ matches(uml.UmlAnnotation):boolean<br/>+ matches(uml.UmlClass):boolean<br/>+ matches(uml.UmlEntity):boolean<br/>+ matchesMethodParameterTypes():boolean<br/>+ matchesFieldType():boolean<br/>+ matchesMethodReturnType():boolean<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.UmlMethodTypesFilter" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Interpreter:\lTerminalExpression\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.UmlMethodTypesFilter" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.UmlMethodTypesFilter<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.NotUmlMatcher" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Interpreter:\lNonterminalExpression\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.NotUmlMatcher" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.NotUmlMatcher<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- matcher:uml.UmlMatcher<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ matches(uml.UmlField):boolean<br/>+ matches(uml.UmlMethod):boolean<br/>+ matches(uml.UmlAnnotation):boolean<br/>+ matches(uml.UmlClass):boolean<br/>+ matches(uml.UmlEntity):boolean<br/>+ matchesMethodParameterTypes():boolean<br/>+ matchesFieldType():boolean<br/>+ matchesMethodReturnType():boolean<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.OrUmlMatcher" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Interpreter:\lNonterminalExpression\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.OrUmlMatcher" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.OrUmlMatcher<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- lhs:uml.UmlMatcher<br/>- rhs:uml.UmlMatcher<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ matches(uml.UmlField):boolean<br/>+ matches(uml.UmlMethod):boolean<br/>+ matches(uml.UmlAnnotation):boolean<br/>+ matches(uml.UmlClass):boolean<br/>+ matches(uml.UmlEntity):boolean<br/>+ matchesMethodParameterTypes():boolean<br/>+ matchesFieldType():boolean<br/>+ matchesMethodReturnType():boolean<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.UmlMatcher" -> "uml.UmlMatcher" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "COMMENT.uml.AllUmlMatcher" -> "uml.AllUmlMatcher" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.AllUmlMatcher" -> "uml.UmlMatcher" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "COMMENT.uml.UmlAnnotationFilter" -> "uml.UmlAnnotationFilter" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlAnnotationFilter" -> "uml.AllUmlMatcher" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "COMMENT.uml.UmlFieldFilter" -> "uml.UmlFieldFilter" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlFieldFilter" -> "uml.AllUmlMatcher" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "COMMENT.uml.UmlFieldTypeFilter" -> "uml.UmlFieldTypeFilter" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlFieldTypeFilter" -> "uml.AllUmlMatcher" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "COMMENT.uml.UmlMethodFilter" -> "uml.UmlMethodFilter" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlMethodFilter" -> "uml.AllUmlMatcher" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "COMMENT.uml.UmlMethodParameterTypesFilter" -> "uml.UmlMethodParameterTypesFilter" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlMethodParameterTypesFilter" -> "uml.AllUmlMatcher" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "COMMENT.uml.UmlMethodReturnTypeFilter" -> "uml.UmlMethodReturnTypeFilter" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlMethodReturnTypeFilter" -> "uml.AllUmlMatcher" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "COMMENT.uml.UmlPackageMatcher" -> "uml.UmlPackageMatcher" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlPackageMatcher" -> "uml.AllUmlMatcher" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "COMMENT.uml.UmlPublicMatcher" -> "uml.UmlPublicMatcher" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlPublicMatcher" -> "uml.AllUmlMatcher" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "COMMENT.uml.AndUmlMatcher" -> "uml.AndUmlMatcher" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.AndUmlMatcher" -> "uml.UmlMatcher" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.AndUmlMatcher" -> "uml.UmlMatcher" [
+    arrowhead = "vee";
+    arrowtail = "odiamond";
+    constraint = "false";
+    dir = "both";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "COMMENT.uml.UmlMethodTypesFilter" -> "uml.UmlMethodTypesFilter" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlMethodTypesFilter" -> "uml.AndUmlMatcher" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "COMMENT.uml.NotUmlMatcher" -> "uml.NotUmlMatcher" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.NotUmlMatcher" -> "uml.UmlMatcher" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.NotUmlMatcher" -> "uml.UmlMatcher" [
+    arrowhead = "vee";
+    arrowtail = "odiamond";
+    constraint = "false";
+    dir = "both";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "COMMENT.uml.OrUmlMatcher" -> "uml.OrUmlMatcher" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.OrUmlMatcher" -> "uml.UmlMatcher" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.OrUmlMatcher" -> "uml.UmlMatcher" [
+    arrowhead = "vee";
+    arrowtail = "odiamond";
+    constraint = "false";
+    dir = "both";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  {
+    rank = "same";
+
+    "COMMENT.uml.UmlMatcher";
+    "uml.UmlMatcher";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.AllUmlMatcher";
+    "uml.AllUmlMatcher";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.UmlAnnotationFilter";
+    "uml.UmlAnnotationFilter";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.UmlFieldFilter";
+    "uml.UmlFieldFilter";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.UmlFieldTypeFilter";
+    "uml.UmlFieldTypeFilter";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.UmlMethodFilter";
+    "uml.UmlMethodFilter";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.UmlMethodParameterTypesFilter";
+    "uml.UmlMethodParameterTypesFilter";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.UmlMethodReturnTypeFilter";
+    "uml.UmlMethodReturnTypeFilter";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.UmlPackageMatcher";
+    "uml.UmlPackageMatcher";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.UmlPublicMatcher";
+    "uml.UmlPublicMatcher";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.AndUmlMatcher";
+    "uml.AndUmlMatcher";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.UmlMethodTypesFilter";
+    "uml.UmlMethodTypesFilter";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.NotUmlMatcher";
+    "uml.NotUmlMatcher";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.OrUmlMatcher";
+    "uml.OrUmlMatcher";
+  };
+}

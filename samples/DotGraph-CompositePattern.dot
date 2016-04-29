@@ -1,0 +1,218 @@
+digraph unnamed {
+
+  graph [
+    rankdir = "BT";
+    splines = "ortho";
+
+  ];
+
+  "COMMENT.uml.DotElement" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Composite:\lComponent\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.DotElement" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.DotElement<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- attributes:java.util.Map<br/>- statements:java.util.List<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ toString():java.lang.String<br/>+ appendTo(java.util.Formatter):java.util.Formatter<br/>+ addAttribute(java.lang.String, java.lang.String):void<br/>+ addStatement(java.lang.String):void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.DotGraph" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Composite:\lComposite\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.DotGraph" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.DotGraph<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- name:java.lang.String<br/>- nodes:java.util.List<br/>- edges:java.util.List<br/>- sections:java.util.List<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ getName():java.lang.String<br/>+ setName(java.lang.String):void<br/>+ appendTo(java.util.Formatter):java.util.Formatter<br/>+ addNode(uml.DotNode):void<br/>+ addEdge(uml.DotEdge):void<br/>+ addSection(uml.DotSection):void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.DotEdge" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Composite:\lLeaf\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.DotEdge" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.DotEdge<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- src:java.lang.String<br/>- dst:java.lang.String<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ appendTo(java.util.Formatter):java.util.Formatter<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.DotNode" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Composite:\lLeaf\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.DotNode" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.DotNode<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- name:java.lang.String<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ getName():java.lang.String<br/>+ appendTo(java.util.Formatter):java.util.Formatter<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.DotElement" -> "uml.DotElement" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "COMMENT.uml.DotGraph" -> "uml.DotGraph" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.DotGraph" -> "uml.DotElement" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "COMMENT.uml.DotEdge" -> "uml.DotEdge" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.DotEdge" -> "uml.DotElement" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "COMMENT.uml.DotNode" -> "uml.DotNode" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.DotNode" -> "uml.DotElement" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  {
+    rank = "same";
+
+    "COMMENT.uml.DotElement";
+    "uml.DotElement";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.DotGraph";
+    "uml.DotGraph";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.DotEdge";
+    "uml.DotEdge";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.DotNode";
+    "uml.DotNode";
+  };
+}

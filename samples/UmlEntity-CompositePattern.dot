@@ -1,0 +1,494 @@
+digraph unnamed {
+
+  graph [
+    rankdir = "BT";
+
+  ];
+
+  "uml.UmlEntity" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+uml.UmlEntity<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ getModifiers():int<br/>+ getName():java.lang.String<br/>+ getDeclaringClass():java.lang.String<br/>+ accept(uml.GenericUmlVisitor):java.lang.Object<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "uml.UmlClass" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+uml.UmlClass<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ isPrimitive():boolean<br/>+ getSuperclass():java.lang.String<br/>+ getName():java.lang.String<br/>+ getFields():java.util.List<br/>+ getMethods():java.util.List<br/>+ getAnnotations():java.util.List<br/>+ getSuperinterfaces():java.util.List<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "uml.UmlInterface" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+uml.UmlInterface<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ accept(uml.GenericUmlVisitor):java.lang.Object<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "uml.UmlAbstractClass" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+uml.UmlAbstractClass<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ accept(uml.GenericUmlVisitor):java.lang.Object<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "uml.UmlConcreteClass" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+uml.UmlConcreteClass<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ accept(uml.GenericUmlVisitor):java.lang.Object<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "uml.UmlField" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+uml.UmlField<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ accept(uml.GenericUmlVisitor):java.lang.Object<br/>+ getType():java.lang.String<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "uml.UmlMethod" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+uml.UmlMethod<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ getName():java.lang.String<br/>+ getReturnType():java.lang.String<br/>+ getParameterTypes():java.util.List<br/>+ accept(uml.GenericUmlVisitor):java.lang.Object<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "uml.MutableUmlAbstractClass" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.MutableUmlAbstractClass<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "uml.MutableUmlEntity" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFC400'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.MutableUmlEntity<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- name:java.lang.String<br/>- modifiers:int<br/>- declaringClass:java.lang.String<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ getModifiers():int<br/>+ getName():java.lang.String<br/>+ getDeclaringClass():java.lang.String<br/>+ setModifiers(int):void<br/>+ setDeclaringClass(java.lang.String):void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "uml.MutableUmlMethod" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.MutableUmlMethod<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- returnType:java.lang.String<br/>- parameterTypes:java.util.List<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ getReturnType():java.lang.String<br/>+ getParameterTypes():java.util.List<br/>+ setReturnType(java.lang.String):void<br/>+ addParameter(java.lang.String):void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "uml.MutableUmlClass" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFC400'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.MutableUmlClass<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- superclass:java.lang.String<br/>- superinterfaces:java.util.List<br/>- fields:java.util.List<br/>- methods:java.util.List<br/>- annotations:java.util.List<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ isPrimitive():boolean<br/>+ getSuperclass():java.lang.String<br/>+ getFields():java.util.List<br/>+ getMethods():java.util.List<br/>+ getAnnotations():java.util.List<br/>+ setSuperclass(java.lang.String):void<br/>+ addSuperinterface(java.lang.String):void<br/>+ addMethod(uml.UmlMethod):void<br/>+ addField(uml.UmlField):void<br/>+ addAnnotation(uml.UmlAnnotation):void<br/>+ getSuperinterfaces():java.util.List<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "uml.MutableUmlField" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.MutableUmlField<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- type:java.lang.String<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ getType():java.lang.String<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "uml.MutableUmlConcreteClass" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.MutableUmlConcreteClass<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "uml.MutableUmlInterface" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.MutableUmlInterface<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "uml.UmlClass" -> "uml.UmlEntity" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlInterface" -> "uml.UmlClass" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlAbstractClass" -> "uml.UmlClass" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlConcreteClass" -> "uml.UmlClass" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlField" -> "uml.UmlEntity" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.UmlMethod" -> "uml.UmlEntity" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.MutableUmlAbstractClass" -> "uml.MutableUmlClass" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "uml.MutableUmlAbstractClass" -> "uml.UmlAbstractClass" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.MutableUmlEntity" -> "uml.UmlEntity" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.MutableUmlMethod" -> "uml.MutableUmlEntity" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "uml.MutableUmlMethod" -> "uml.UmlMethod" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.MutableUmlClass" -> "uml.MutableUmlEntity" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "uml.MutableUmlClass" -> "uml.UmlClass" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.MutableUmlClass" -> "uml.UmlMethod" [
+    arrowhead = "vee";
+    arrowtail = "empty";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "uml.MutableUmlClass" -> "uml.UmlField" [
+    arrowhead = "vee";
+    arrowtail = "empty";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "uml.MutableUmlField" -> "uml.MutableUmlEntity" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "uml.MutableUmlField" -> "uml.UmlField" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.MutableUmlConcreteClass" -> "uml.MutableUmlClass" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "uml.MutableUmlConcreteClass" -> "uml.UmlConcreteClass" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.MutableUmlInterface" -> "uml.MutableUmlClass" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "uml.MutableUmlInterface" -> "uml.UmlInterface" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+}

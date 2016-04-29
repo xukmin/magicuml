@@ -10,6 +10,18 @@ Some example Design Patterns are in package `patterns`.
 
 The GUI main function resides in class `uml.UmlDiagramGeneratorGui`.
 
+# Sample UML Diagrams Generated using MagicUML
+
+![Observer Pattern](samples/patterns-ObserverPattern.png "Observer Pattern")
+
+![Composite Pattern](samples/patterns-CompositePattern.png "Composite Pattern")
+
+![Decorator Pattern](samples/patterns-DecoratorPattern.png "Decorator Pattern")
+
+![State Pattern](samples/patterns-StatePattern.png "State Pattern")
+
+![Builder Pattern](samples/patterns-BuilderPattern.png "Builder Pattern")
+
 # Dependencies
 
 - GraphViz (http://www.graphviz.org/)

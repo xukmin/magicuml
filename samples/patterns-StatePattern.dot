@@ -1,0 +1,175 @@
+digraph unnamed {
+
+  graph [
+    rankdir = "BT";
+    splines = "ortho";
+
+  ];
+
+  "patterns.state.Client" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+patterns.state.Client<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ handleContext(patterns.state.Context):void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "patterns.state.ConcreteStateA" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+patterns.state.ConcreteStateA<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ handle():void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "patterns.state.ConcreteStateB" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+patterns.state.ConcreteStateB<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ handle():void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "patterns.state.Context" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+patterns.state.Context<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- state:patterns.state.State<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ request():void<br/>+ setState(patterns.state.State):void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "patterns.state.State" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+patterns.state.State<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ handle():void<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "patterns.state.Client" -> "patterns.state.ConcreteStateA" [
+    arrowhead = "none";
+    arrowtail = "none";
+    constraint = "false";
+    style = "invisible";
+
+  ];
+
+  "patterns.state.Client" -> "patterns.state.ConcreteStateB" [
+    arrowhead = "none";
+    arrowtail = "none";
+    constraint = "false";
+    style = "invisible";
+
+  ];
+
+  "patterns.state.Client" -> "patterns.state.Context" [
+    arrowhead = "vee";
+    arrowtail = "empty";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "patterns.state.ConcreteStateA" -> "patterns.state.State" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "patterns.state.ConcreteStateB" -> "patterns.state.State" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "patterns.state.Context" -> "patterns.state.State" [
+    arrowhead = "vee";
+    arrowtail = "odiamond";
+    constraint = "false";
+    dir = "both";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+}

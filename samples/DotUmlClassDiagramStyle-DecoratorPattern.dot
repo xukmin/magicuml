@@ -1,0 +1,283 @@
+digraph unnamed {
+
+  graph [
+    rankdir = "BT";
+
+  ];
+
+  "COMMENT.uml.DotUmlClassDiagramStyle" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Decorator:\lComponent\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.DotUmlClassDiagramStyle" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FFEA00'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+uml.DotUmlClassDiagramStyle<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ getDiagramStyle():java.util.Map<br/>+ getInterfaceStyle():java.util.Map<br/>+ getAbstractClassStyle():java.util.Map<br/>+ getConcreteClassStyle():java.util.Map<br/>+ getImplementsStyle():java.util.Map<br/>+ getExtendsStyle():java.util.Map<br/>+ getContainsStyle():java.util.Map<br/>+ getUsesStyle():java.util.Map<br/>+ getCreatesStyle():java.util.Map<br/>+ getInterfaceFrameStyle():java.util.Map<br/>+ getAbstractClassFrameStyle():java.util.Map<br/>+ getConcreteClassFrameStyle():java.util.Map<br/>+ getInterfaceNameStyle():java.util.Map<br/>+ getAbstractClassNameStyle():java.util.Map<br/>+ getConcreteClassNameStyle():java.util.Map<br/>+ getInterfaceFieldStyle():java.util.Map<br/>+ getAbstractClassFieldStyle():java.util.Map<br/>+ getConcreteClassFieldStyle():java.util.Map<br/>+ getInterfaceMethodStyle():java.util.Map<br/>+ getAbstractClassMethodStyle():java.util.Map<br/>+ getConcreteClassMethodStyle():java.util.Map<br/>+ getInvisibleStyle():java.util.Map<br/>+ getInvisibleNoConstraintStyle():java.util.Map<br/>+ getCommentStyle():java.util.Map<br/>+ getCommentsStyle():java.util.Map<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.DefaultDotUmlClassDiagramStyle" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Decorator:\lConcreteComponent\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.DefaultDotUmlClassDiagramStyle" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.DefaultDotUmlClassDiagramStyle<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ getDiagramStyle():java.util.Map<br/>+ getInterfaceStyle():java.util.Map<br/>+ getAbstractClassStyle():java.util.Map<br/>+ getConcreteClassStyle():java.util.Map<br/>+ getImplementsStyle():java.util.Map<br/>+ getExtendsStyle():java.util.Map<br/>+ getContainsStyle():java.util.Map<br/>+ getUsesStyle():java.util.Map<br/>+ getCreatesStyle():java.util.Map<br/>+ getInterfaceFrameStyle():java.util.Map<br/>+ getAbstractClassFrameStyle():java.util.Map<br/>+ getConcreteClassFrameStyle():java.util.Map<br/>+ getInterfaceNameStyle():java.util.Map<br/>+ getAbstractClassNameStyle():java.util.Map<br/>+ getConcreteClassNameStyle():java.util.Map<br/>+ getInterfaceFieldStyle():java.util.Map<br/>+ getAbstractClassFieldStyle():java.util.Map<br/>+ getConcreteClassFieldStyle():java.util.Map<br/>+ getInterfaceMethodStyle():java.util.Map<br/>+ getAbstractClassMethodStyle():java.util.Map<br/>+ getConcreteClassMethodStyle():java.util.Map<br/>+ getInvisibleStyle():java.util.Map<br/>+ getInvisibleNoConstraintStyle():java.util.Map<br/>+ getCommentStyle():java.util.Map<br/>+ getCommentsStyle():java.util.Map<br/>- getClassStyle():java.util.Map<br/>- getRelationStyle():java.util.Map<br/>- getClassFrameStyle():java.util.Map<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.DotUmlClassDiagramStyleDecorator" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Decorator:\lDecorator\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.DotUmlClassDiagramStyleDecorator" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.DotUmlClassDiagramStyleDecorator<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- style:uml.DotUmlClassDiagramStyle<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ getDiagramStyle():java.util.Map<br/>+ getInterfaceStyle():java.util.Map<br/>+ getAbstractClassStyle():java.util.Map<br/>+ getConcreteClassStyle():java.util.Map<br/>+ getImplementsStyle():java.util.Map<br/>+ getExtendsStyle():java.util.Map<br/>+ getContainsStyle():java.util.Map<br/>+ getUsesStyle():java.util.Map<br/>+ getCreatesStyle():java.util.Map<br/>+ getInterfaceFrameStyle():java.util.Map<br/>+ getAbstractClassFrameStyle():java.util.Map<br/>+ getConcreteClassFrameStyle():java.util.Map<br/>+ getInterfaceNameStyle():java.util.Map<br/>+ getAbstractClassNameStyle():java.util.Map<br/>+ getConcreteClassNameStyle():java.util.Map<br/>+ getInterfaceFieldStyle():java.util.Map<br/>+ getAbstractClassFieldStyle():java.util.Map<br/>+ getConcreteClassFieldStyle():java.util.Map<br/>+ getInterfaceMethodStyle():java.util.Map<br/>+ getAbstractClassMethodStyle():java.util.Map<br/>+ getConcreteClassMethodStyle():java.util.Map<br/>+ getInvisibleStyle():java.util.Map<br/>+ getInvisibleNoConstraintStyle():java.util.Map<br/>+ getCommentStyle():java.util.Map<br/>+ getCommentsStyle():java.util.Map<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.ColoredDotUmlClassDiagramStyle" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Decorator:\lConcreteDecorator\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.ColoredDotUmlClassDiagramStyle" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.ColoredDotUmlClassDiagramStyle<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+- palette:uml.UmlClassDiagramPalette<br/>
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ getInterfaceNameStyle():java.util.Map<br/>+ getAbstractClassNameStyle():java.util.Map<br/>+ getConcreteClassNameStyle():java.util.Map<br/>+ getInterfaceFieldStyle():java.util.Map<br/>+ getAbstractClassFieldStyle():java.util.Map<br/>+ getConcreteClassFieldStyle():java.util.Map<br/>+ getInterfaceMethodStyle():java.util.Map<br/>+ getAbstractClassMethodStyle():java.util.Map<br/>+ getConcreteClassMethodStyle():java.util.Map<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.OrthogonalDotUmlClassDiagramStyle" [
+    fillcolor = "#FFF9C4";
+    fontsize = "9";
+    label = "Decorator:\lConcreteDecorator\l";
+    shape = "note";
+    style = "filled";
+
+  ];
+
+  "uml.OrthogonalDotUmlClassDiagramStyle" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#FF9100'>
+&lt;&lt;Java class&gt;&gt;<br/>
+uml.OrthogonalDotUmlClassDiagramStyle<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ getDiagramStyle():java.util.Map<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "COMMENT.uml.DotUmlClassDiagramStyle" -> "uml.DotUmlClassDiagramStyle" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "COMMENT.uml.DefaultDotUmlClassDiagramStyle" -> "uml.DefaultDotUmlClassDiagramStyle" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.DefaultDotUmlClassDiagramStyle" -> "uml.DotUmlClassDiagramStyle" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "COMMENT.uml.DotUmlClassDiagramStyleDecorator" -> "uml.DotUmlClassDiagramStyleDecorator" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.DotUmlClassDiagramStyleDecorator" -> "uml.DotUmlClassDiagramStyle" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.DotUmlClassDiagramStyleDecorator" -> "uml.DotUmlClassDiagramStyle" [
+    arrowhead = "vee";
+    arrowtail = "odiamond";
+    constraint = "false";
+    dir = "both";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "COMMENT.uml.ColoredDotUmlClassDiagramStyle" -> "uml.ColoredDotUmlClassDiagramStyle" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.ColoredDotUmlClassDiagramStyle" -> "uml.DotUmlClassDiagramStyleDecorator" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "COMMENT.uml.OrthogonalDotUmlClassDiagramStyle" -> "uml.OrthogonalDotUmlClassDiagramStyle" [
+    arrowhead = "none";
+    constraint = "false";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "uml.OrthogonalDotUmlClassDiagramStyle" -> "uml.DotUmlClassDiagramStyleDecorator" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  {
+    rank = "same";
+
+    "COMMENT.uml.DotUmlClassDiagramStyle";
+    "uml.DotUmlClassDiagramStyle";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.DefaultDotUmlClassDiagramStyle";
+    "uml.DefaultDotUmlClassDiagramStyle";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.DotUmlClassDiagramStyleDecorator";
+    "uml.DotUmlClassDiagramStyleDecorator";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.ColoredDotUmlClassDiagramStyle";
+    "uml.ColoredDotUmlClassDiagramStyle";
+  };
+  {
+    rank = "same";
+
+    "COMMENT.uml.OrthogonalDotUmlClassDiagramStyle";
+    "uml.OrthogonalDotUmlClassDiagramStyle";
+  };
+}
