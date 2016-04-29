@@ -1,0 +1,269 @@
+digraph unnamed {
+
+  graph [
+    rankdir = "BT";
+
+  ];
+
+  "java.util.HashSet" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#1DE9B6'>
+&lt;&lt;Java class&gt;&gt;<br/>
+java.util.HashSet<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ add(java.lang.Object):boolean<br/>+ remove(java.lang.Object):boolean<br/>+ clone():java.lang.Object<br/>+ clear():void<br/>+ isEmpty():boolean<br/>+ contains(java.lang.Object):boolean<br/>+ size():int<br/>+ iterator():java.util.Iterator<br/>+ spliterator():java.util.Spliterator<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "java.util.TreeSet" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#1DE9B6'>
+&lt;&lt;Java class&gt;&gt;<br/>
+java.util.TreeSet<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ add(java.lang.Object):boolean<br/>+ remove(java.lang.Object):boolean<br/>+ clone():java.lang.Object<br/>+ clear():void<br/>+ isEmpty():boolean<br/>+ contains(java.lang.Object):boolean<br/>+ size():int<br/>+ iterator():java.util.Iterator<br/>+ spliterator():java.util.Spliterator<br/>+ addAll(java.util.Collection):boolean<br/>+ first():java.lang.Object<br/>+ floor(java.lang.Object):java.lang.Object<br/>+ last():java.lang.Object<br/>+ comparator():java.util.Comparator<br/>+ lower(java.lang.Object):java.lang.Object<br/>+ descendingSet():java.util.NavigableSet<br/>+ subSet(java.lang.Object, java.lang.Object):java.util.SortedSet<br/>+ subSet(java.lang.Object, boolean, java.lang.Object, boolean):java.util.NavigableSet<br/>+ headSet(java.lang.Object):java.util.SortedSet<br/>+ headSet(java.lang.Object, boolean):java.util.NavigableSet<br/>+ tailSet(java.lang.Object, boolean):java.util.NavigableSet<br/>+ tailSet(java.lang.Object):java.util.SortedSet<br/>+ ceiling(java.lang.Object):java.lang.Object<br/>+ higher(java.lang.Object):java.lang.Object<br/>+ pollFirst():java.lang.Object<br/>+ pollLast():java.lang.Object<br/>+ descendingIterator():java.util.Iterator<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "java.util.AbstractSet" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#00E5FF'>
+&lt;&lt;Java class&gt;&gt;<br/>
+java.util.AbstractSet<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ equals(java.lang.Object):boolean<br/>+ hashCode():int<br/>+ removeAll(java.util.Collection):boolean<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "java.util.Set" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#00B0FF'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+java.util.Set<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ add(java.lang.Object):boolean<br/>+ remove(java.lang.Object):boolean<br/>+ equals(java.lang.Object):boolean<br/>+ hashCode():int<br/>+ clear():void<br/>+ isEmpty():boolean<br/>+ contains(java.lang.Object):boolean<br/>+ size():int<br/>+ toArray(java.lang.Object[]):java.lang.Object[]<br/>+ toArray():java.lang.Object[]<br/>+ iterator():java.util.Iterator<br/>+ spliterator():java.util.Spliterator<br/>+ addAll(java.util.Collection):boolean<br/>+ containsAll(java.util.Collection):boolean<br/>+ removeAll(java.util.Collection):boolean<br/>+ retainAll(java.util.Collection):boolean<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "java.util.NavigableSet" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#00B0FF'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+java.util.NavigableSet<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ iterator():java.util.Iterator<br/>+ floor(java.lang.Object):java.lang.Object<br/>+ lower(java.lang.Object):java.lang.Object<br/>+ descendingSet():java.util.NavigableSet<br/>+ subSet(java.lang.Object, java.lang.Object):java.util.SortedSet<br/>+ subSet(java.lang.Object, boolean, java.lang.Object, boolean):java.util.NavigableSet<br/>+ headSet(java.lang.Object, boolean):java.util.NavigableSet<br/>+ headSet(java.lang.Object):java.util.SortedSet<br/>+ tailSet(java.lang.Object):java.util.SortedSet<br/>+ tailSet(java.lang.Object, boolean):java.util.NavigableSet<br/>+ ceiling(java.lang.Object):java.lang.Object<br/>+ higher(java.lang.Object):java.lang.Object<br/>+ pollFirst():java.lang.Object<br/>+ pollLast():java.lang.Object<br/>+ descendingIterator():java.util.Iterator<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "java.util.AbstractCollection" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#00E5FF'>
+&lt;&lt;Java class&gt;&gt;<br/>
+java.util.AbstractCollection<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ add(java.lang.Object):boolean<br/>+ remove(java.lang.Object):boolean<br/>+ toString():java.lang.String<br/>+ clear():void<br/>+ isEmpty():boolean<br/>+ contains(java.lang.Object):boolean<br/>+ size():int<br/>+ toArray(java.lang.Object[]):java.lang.Object[]<br/>+ toArray():java.lang.Object[]<br/>+ iterator():java.util.Iterator<br/>+ addAll(java.util.Collection):boolean<br/>+ containsAll(java.util.Collection):boolean<br/>+ removeAll(java.util.Collection):boolean<br/>+ retainAll(java.util.Collection):boolean<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "java.util.Collection" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#00B0FF'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+java.util.Collection<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ add(java.lang.Object):boolean<br/>+ remove(java.lang.Object):boolean<br/>+ equals(java.lang.Object):boolean<br/>+ hashCode():int<br/>+ clear():void<br/>+ isEmpty():boolean<br/>+ contains(java.lang.Object):boolean<br/>+ size():int<br/>+ toArray(java.lang.Object[]):java.lang.Object[]<br/>+ toArray():java.lang.Object[]<br/>+ iterator():java.util.Iterator<br/>+ spliterator():java.util.Spliterator<br/>+ addAll(java.util.Collection):boolean<br/>+ stream():java.util.stream.Stream<br/>+ containsAll(java.util.Collection):boolean<br/>+ removeAll(java.util.Collection):boolean<br/>+ retainAll(java.util.Collection):boolean<br/>+ removeIf(java.util.function.Predicate):boolean<br/>+ parallelStream():java.util.stream.Stream<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "java.util.SortedSet" [
+    fontsize = "9";
+    label = <<table  border='0'  cellborder='1'  cellspacing='0'>
+<tr><td  bgcolor='#00B0FF'>
+&lt;&lt;Java interface&gt;&gt;<br/>
+java.util.SortedSet<br/>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
+
+</td>
+</tr>
+<tr><td  bgcolor='#FFFFFF'>
++ spliterator():java.util.Spliterator<br/>+ first():java.lang.Object<br/>+ last():java.lang.Object<br/>+ comparator():java.util.Comparator<br/>+ subSet(java.lang.Object, java.lang.Object):java.util.SortedSet<br/>+ headSet(java.lang.Object):java.util.SortedSet<br/>+ tailSet(java.lang.Object):java.util.SortedSet<br/>
+</td>
+</tr>
+</table>
+>;
+    shape = "plaintext";
+
+  ];
+
+  "java.util.HashSet" -> "java.util.AbstractSet" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "java.util.HashSet" -> "java.util.Set" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "java.util.TreeSet" -> "java.util.AbstractSet" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "java.util.TreeSet" -> "java.util.NavigableSet" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "java.util.AbstractSet" -> "java.util.AbstractCollection" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+
+  ];
+
+  "java.util.AbstractSet" -> "java.util.Set" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "java.util.Set" -> "java.util.Collection" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "java.util.NavigableSet" -> "java.util.SortedSet" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "java.util.AbstractCollection" -> "java.util.Collection" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+  "java.util.SortedSet" -> "java.util.Set" [
+    arrowhead = "empty";
+    fontsize = "9";
+    minlen = "2";
+    style = "dashed";
+
+  ];
+
+}
